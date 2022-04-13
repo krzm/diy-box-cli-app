@@ -1,7 +1,5 @@
-using System.Collections.Generic;
 using DIHelper;
 using DiyBox.Core;
-using Serilog;
 using Unity;
 using Unity.Injection;
 
@@ -20,11 +18,6 @@ public class AppProgram<TProgram>
     protected override InjectionConstructor GetInjectionConstructor()
     {
         return new InjectionConstructor(
-            new object[]
-            {
-                Container.Resolve<IArgsParser<Size3d>>()
-                , Container.Resolve<IDictionary<Descriptors, IDescriptor>>()
-                , Container.Resolve<ILogger>()
-            });
+            Container.Resolve<IDiyBoxWizard>());
     }
 }

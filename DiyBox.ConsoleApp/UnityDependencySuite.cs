@@ -18,13 +18,8 @@ public class UnityDependencySuite
     {
         RegisterSet<AppLoggerSet>();
         RegisterSet<AppConfigSet>();
+        RegisterSet<DiyBoxSet>();
     }
-
-	protected override void RegisterConsoleInput() => 
-		RegisterSet<AppInput>();
-
-	protected override void RegisterConsoleOutput() => 
-		RegisterSet<DescriptorSet>();
 
 	protected override void RegisterProgram() => 
 		RegisterSet<AppProgram<DiyBoxProgram>>();
