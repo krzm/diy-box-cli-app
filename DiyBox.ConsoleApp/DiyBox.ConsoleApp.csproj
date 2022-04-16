@@ -26,9 +26,6 @@
 
   	<!--Debug refs-->
 	<!-- <ItemGroup>
-		<Reference Include="DiyBox.Core">
-			<HintPath>..\..\diy-box\DiyBox.Core\bin\Debug\net6.0\DiyBox.Core.dll</HintPath>
-		</Reference>
 		<Reference Include="DIHelper">
 			<HintPath>..\..\di-helper\DIHelper\bin\Debug\net6.0\DIHelper.dll</HintPath>
 		</Reference>
@@ -41,13 +38,13 @@
 		<Reference Include="CLIFramework">
 			<HintPath>..\..\cli-framework\CLIFramework\bin\Debug\net6.0\CLIFramework.dll</HintPath>
 		</Reference>
+		<Reference Include="DiyBox.Core">
+			<HintPath>..\..\diy-box\DiyBox.Core\bin\Debug\net6.0\DiyBox.Core.dll</HintPath>
+		</Reference>
 	</ItemGroup> -->
   
 	<!--Release refs-->
 	<ItemGroup>
-		<Reference Include="DiyBox.Core">
-			<HintPath>..\..\..\Build\diy-box\DiyBox.Core\DiyBox.Core.dll</HintPath>
-		</Reference>
 		<Reference Include="DIHelper">
 			<HintPath>..\..\..\Build\di-helper\DIHelper\DIHelper.dll</HintPath>
 		</Reference>
@@ -59,6 +56,9 @@
 			</Reference>
 		<Reference Include="CLIFramework">
 			<HintPath>..\..\..\Build\cli-framework\CLIFramework\CLIFramework.dll</HintPath>
+		</Reference>
+		<Reference Include="DiyBox.Core">
+			<HintPath>..\..\..\Build\diy-box\DiyBox.Core\DiyBox.Core.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 
