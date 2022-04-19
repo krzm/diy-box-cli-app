@@ -18,6 +18,7 @@ public class AppProgram<TProgram>
     protected override InjectionConstructor GetInjectionConstructor()
     {
         return new InjectionConstructor(
-            Container.Resolve<IDiyBoxWizard>());
+            Container.Resolve<IDiyBoxWizard>(
+                nameof(DiyBoxWizard)));
     }
 }
