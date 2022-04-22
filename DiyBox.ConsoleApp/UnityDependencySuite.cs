@@ -1,5 +1,7 @@
+using CLIHelper.Unity;
 using Config.Wrapper.Unity;
 using DiyBox.Core;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Serilog.Wrapper.Unity;
 using Unity;
 
@@ -19,6 +21,8 @@ public class UnityDependencySuite
         RegisterSet<AppLoggerSet>();
         RegisterSet<AppConfigSet>();
         RegisterSet<DiyBoxSet>();
+        RegisterSet<DescriptorSet>();
+        RegisterSet<CliIOSet>();
     }
 
 	protected override void RegisterProgram() => 
