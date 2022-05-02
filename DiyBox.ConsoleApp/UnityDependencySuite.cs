@@ -1,7 +1,6 @@
 using CLIHelper.Unity;
 using Config.Wrapper.Unity;
 using DiyBox.Core;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Serilog.Wrapper.Unity;
 using Unity;
 
@@ -21,7 +20,7 @@ public class UnityDependencySuite
         RegisterSet<AppLoggerSet>();
         RegisterSet<AppConfigSet>();
         RegisterSet<CliIOSet>();
-        RegisterSet<DiyBoxCalculatorSet>();
+        RegisterSet<DiyBoxWithEvenFoldsSet>();
         RegisterSet<DescriptorSet>();
         RegisterSet<DescriptorDictionarySet>();
         RegisterSet<WizardSet>();
