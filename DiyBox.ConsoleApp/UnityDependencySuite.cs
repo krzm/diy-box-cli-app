@@ -28,5 +28,5 @@ public class UnityDependencySuite
     }
 
 	protected override void RegisterProgram() => 
-		RegisterSet<AppProgram<DiyBoxProgram>>();
+		RegisterSet<CLIFramework.AppProgram<DiyBoxProgram>>();
 }
