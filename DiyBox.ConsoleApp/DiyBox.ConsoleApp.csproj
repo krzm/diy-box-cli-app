@@ -1,32 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
-
 	<ItemGroup>
-		<PackageReference Include="Unity" Version="5.11.10" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
-		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.1" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
-		<PackageReference Include="Serilog" Version="2.10.0" />
-		<PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
-		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+		<PackageReference Include="Unity" Version="5.11.10"/>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0-preview.5.22301.12"/>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.0-preview.5.22301.12"/>
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0-preview.5.22301.12"/>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0-preview.5.22301.12"/>
+		<PackageReference Include="Serilog" Version="2.10.0"/>
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.0.1"/>
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0"/>
 	</ItemGroup>
-
 	<ItemGroup>
 		<None Update="appsettings.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
-
-  	<!--Debug refs-->
+	<!--Debug refs-->
 	<!-- <ItemGroup>
 		<Reference Include="DIHelper">
 			<HintPath>..\..\di-helper\DIHelper\bin\Debug\net6.0\DIHelper.dll</HintPath>
@@ -47,13 +41,12 @@
 			<HintPath>..\..\diy-box\DiyBox.Core\bin\Debug\net6.0\DiyBox.Core.dll</HintPath>
 		</Reference>
 	</ItemGroup> -->
-  
 	<!--Release refs-->
 	<ItemGroup>
 		<Reference Include="DIHelper">
 			<HintPath>..\..\..\Build\di-helper\DIHelper\DIHelper.dll</HintPath>
 		</Reference>
-        <Reference Include="CliHelper">
+		<Reference Include="CliHelper">
 			<HintPath>..\..\..\Build\cli-helper\CliHelper\CliHelper.dll</HintPath>
 		</Reference>
 		<Reference Include="Config.Wrapper">
@@ -61,7 +54,7 @@
 		</Reference>
 		<Reference Include="Serilog.Wrapper">
 			<HintPath>..\..\..\Build\serilog-wrapper\Serilog.Wrapper\Serilog.Wrapper.dll</HintPath>
-			</Reference>
+		</Reference>
 		<Reference Include="CLIFramework">
 			<HintPath>..\..\..\Build\cli-framework\CLIFramework\CLIFramework.dll</HintPath>
 		</Reference>
@@ -69,5 +62,4 @@
 			<HintPath>..\..\..\Build\diy-box\DiyBox.Core\DiyBox.Core.dll</HintPath>
 		</Reference>
 	</ItemGroup>
-
 </Project>

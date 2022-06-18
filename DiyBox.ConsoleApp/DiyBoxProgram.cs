@@ -4,7 +4,7 @@ using DiyBox.Core;
 namespace DiyBox.ConsoleApp;
 
 public class DiyBoxProgram 
-	: IAppProgram
+	: IMainProgram
 {
     private readonly IDiyBoxWizard diyBoxWizard;
 
